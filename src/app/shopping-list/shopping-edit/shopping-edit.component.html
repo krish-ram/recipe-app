@@ -2,18 +2,18 @@
   <div class="col-xs-12">
     <form>
       <div class="row">
-        <div class="col-xs-5 form-group">
+        <div class="col-sm-5 form-group">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" class="form-control" [(ngModel)]="ingredient.name" />
+          <input type="text" id="name" name="name" class="form-control" [(ngModel)]="ingredient.name" #nameInput/>
         </div>
-        <div class="col-xs-2 form-group">
+        <div class="col-sm-2 form-group">
           <label for="amount">Amount</label>
-          <input type="text" id="amount" name="amount" class="form-control" [(ngModel)]="ingredient.amount" />
+          <input type="text" id="amount" name="amount" class="form-control" [(ngModel)]="ingredient.amount" #amountInput/>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <button type="submit" class="btn btn-success">Add</button>
+          <button type="submit" class="btn btn-success" (click)="onAddItem()">Add</button>
           <button type="button" class="btn btn-danger">Delete</button>
           <button type="button" class="btn btn-primary">Clear</button>
         </div>
