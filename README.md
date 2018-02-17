@@ -1,5 +1,9 @@
 # RecipeApp
 
+The app contains different components Like Recipe List, Item, Details and Shopping List.
+
+Project which was part of learng Angular - the complete guide. 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
 ## Development server
